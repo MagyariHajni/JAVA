@@ -9,9 +9,9 @@ public class Main {
         String name= scanner.nextLine();
 
         if (!name.equals("")) {
-            System.out.println("Hello, "+name);
+            System.out.println("Hello, "+name+"!");
         }else {
-            System.out.println("Hello, stranger");
+            System.out.println("Hello, stranger.");
         }
     }
 }
