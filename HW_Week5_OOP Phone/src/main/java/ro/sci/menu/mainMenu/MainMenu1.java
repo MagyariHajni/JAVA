@@ -14,6 +14,7 @@ import ro.sci.util.UtilPhone;
 import java.util.List;
 
 public class MainMenu1 {
+
     public static void accessMainMenu1(){
         String phoneType;
         Phone currentPhone;
