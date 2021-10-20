@@ -5,7 +5,7 @@ import ro.sci.phoneType.Phone;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Nokia extends Phone {
+public abstract class Nokia extends Phone {
     public static List<String> phoneTypesNokia () {
         List<String> phoneTypes= new ArrayList();
 
