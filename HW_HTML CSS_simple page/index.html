@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>IntroIt_HW_week2</title>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .linkto {
+        color: aqua;
+        font-style: oblique;
+    }
+
+    .background {
+        height: 100vh;
+        width: 100%;
+        background-image: url(./media/background.jpeg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        justify-content: space-between;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .background .thebutton {
+        justify-content: center;
+        display: flex;
+    }
+    
+    .background .checkb {
+        
+        color:azure;
+        font-size: 18px;
+        bottom: 13vh;
+        text-align: left;
+        
+        width: 100%;
+        position: absolute;
+        margin-left: 30%;
+        
+    }
+    
+    .button {
+        background-color: #ee25254d;
+        border: none;
+        color: rgb(18, 172, 219);
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 20px;
+        margin: 40px 40px;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px solid #fa0000;
+        transition-duration: 0.5s;
+    }
+
+    .button:hover {
+        background-color: #0ad5f0f6; 
+        color: rgba(252, 15, 15, 0.603);
+    }
+
+    .content {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    }
+
+    .choice {
+    display:inline-flex;
+    align-items: center;
+    text-align: center;
+    
+    }
+
+    #icon {
+    width: 60px;
+    cursor: pointer;
+    }
+
+    .white18 {
+        color:azure;
+        font-size: 18px;
+    }
+
+    .pairs {
+        color:azure;
+        font-size: 18px;
+        width: 100%;
+        bottom: 25vh;
+        
+        position: absolute;
+        margin-left: 30%;
+    }
+
+    .thesinger {
+        color:azure;
+        font-size: 18px;
+        width: 100%;
+        bottom: 18vh;
+        
+        position: absolute;
+        margin-left: 30%;
+
+    }
+
+     .pleft {
+        text-align: left;
+        display: inline-block;
+    }
+    
+    input[type=radio] {
+    margin-left: 10px;
+    }
+
+    .hidden {
+        display: none;
+        color: rgb(197, 236, 19);
+        font-weight: bolder;
+        font-style: oblique;
+    }
+
+    .answer1 {
+        width: 80px;
+        margin: 10px;
+        color: coral;
+        background: cyan;
+        border-radius: 50%;
+        
+        font-size: 20px;
+        font-weight: bolder;
+        border: 2px solid #fa0000;
+        display: none;
+        padding: 3px;
+    }
+
+    .answer2 {
+        width: 80px;
+        margin: 10px;
+        color: rgb(0, 0, 0);
+        background: rgb(255, 0, 0);
+        border-radius: 50%;
+        
+        font-size: 20px;
+        font-weight: bolder;
+        border: 2px solid #fa0000;
+        display: none;
+        padding: 3px;
+    }
+
+
+</style>
+
+</head>
+<body>
+    <div class="background">
+        <div class="center"> 
+            <p class="white18" style="padding: 10px ">This is a homework assignment for <a href = "http://scoalainformala.ro/" target="_blank" class="linkto">Scoala Informala</a>.</p>
+            
+            <p class="white18" style="margin-top: 30px;">Hello! What is your name? 
+            <input type="text" name="nume" style="width: 100px; margin-left: 10px; height: 25px; border-radius: 10%;"/></p>
+        </div>
+
+        <div class="content">
+            <div class="choice">
+                <label class="white18" >What would you like to listen to? </label>
+                <select id="musiclist" style="width: 100px; margin-left: 10px; height: 25px; border-radius: 10%;"> 
+                <option value="rock"> Rock </option>
+                <option value="opera" selected> Opera </option>
+                <option value="rap"> Rap/Hip-hop </option>
+                <option value="pop"> Pop </option>
+                <option value="manele"> Manele </option>
+                </select>
+                <img src="./media/play.png" id="icon" style="margin-left: 10px;">
+            </div>
+        </div>
+
+        <audio id="rock">
+            <source src="./media/cut_the chain.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="opera">
+            <source src="./media/cut_o fortuna.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="rap">
+            <source src="./media/cut_let it lie.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="pop">
+            <source src="./media/cut_the shape of you.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="manele">
+            <source src="./media/recording.mp3" type="audio/mp3">
+        </audio>
+  
+        <audio id="nthing">
+            <source src="" type="audio/mp3">
+        </audio>
+
+        <div class="pairs">
+            <div class="pleft">
+            <label > Why do you sing? </label><br/>
+            <input type="radio"  name="pair" onclick="f1()">
+            <label >Do you believe in rock'n roll <span id="pair1" class="hidden">Can music save you mortal soul?</span></label><br/>
+            <input type="radio"  name="pair" onclick="f2()">
+            <label >Sing for the laughter and sing for the tear <span id="pair2" class="hidden">Sing with me, if it's just for today</span></label><br/>
+            <input type="radio"  name="pair" onclick="f3()" >
+            <label >You get a shiver in the dark <span id="pair3" class="hidden">It's raining in the park, but meantime</span></label><br/>
+            <input type="radio"  name="pair" onclick="f4()">
+            <label >This little girl didn't care what anybody said <span id="pair4" class="hidden">She got the whole world dancing to the music in her head</span></label><br/>
+            <input type="radio"  name="pair" onclick="f5()">
+            <label >Now, I heard there was a secret chord <span id="pair5" class="hidden">That David played and it pleased the Lord</span></label><br/>
+            </div>
+        </div>
+
+        
+        <div class="thesinger" >
+            <div class="pleft">
+            <div style="height: 30px;"> 
+                <label > Who sang it? </label><label class="answer1" id="aff"> Yep </label><label class="answer2" id="neg"> Nope </label><br/>
+            </div>
+            
+            <input type="radio"  name="who" onclick="fwho1()">
+            <label >Leonard Cohen</label>
+            <input type="radio"  name="who" onclick="fwho2()">
+            <label >Don McLean</label>
+            <input type="radio"  name="who" onclick="fwho3()" >
+            <label >Rihanna</label>
+            <input type="radio"  name="who" onclick="fwho4()">
+            <label >Dio</label>
+            <input type="radio"  name="who" onclick="fwho5()">
+            <label >Dire Straits</label>
+            </div>
+        </div>
+
+     
+        <div class="checkb"> 
+            <label > Where do you sing? </label>
+		<input type="checkbox" name="preference" value="home" style="margin-left: 10px; margin-right: 5px;"/> Home
+		<input type="checkbox" name="preference" value="work" style="margin-left: 10px; margin-right: 5px;"/> Work
+        <input type="checkbox" name="preference" value="shower" style="margin-left: 10px; margin-right: 5px;"/> Shower
+        <input type="checkbox" name="preference" value="car" style="margin-left: 10px; margin-right: 5px;"/> Car
+        <input type="checkbox" name="preference" value="nowhere" style="margin-left: 10px; margin-right: 5px;" /> Nowhere :( 
+        </div>
+        
+
+
+        
+        <div class="thebutton">
+            <button  class="button" onclick="clicked()" >Click me :)</button>
+        </div>
+        
+    
+    </div> 
+    <script>
+        
+        
+        var which1 = 0;
+        var songs = ["rock","opera","rap","pop","manele"]
+        var prevsong = document.getElementById("nthing");
+        var song1= document.getElementById("rock");
+        var song2= document.getElementById("opera");
+        var song3= document.getElementById("rap");
+        var song4= document.getElementById("pop");
+        var song5= document.getElementById("manele");
+        var icon = document.getElementById("icon");
+
+        song1.pause();
+        song2.pause();
+        song3.pause();
+        song4.pause();
+        song5.pause();
+        prevsong.pause();
+
+        icon.onclick = function(){
+            var selectedValue = document.getElementById("musiclist").value
+            var mysong = document.getElementById(selectedValue);
+            
+         if ((mysong==prevsong) || (prevsong.paused)) { if(mysong.paused)
+                                      {mysong.play();
+                                      icon.src= "./media/pause.png"}
+                                      else 
+                                       {mysong.pause();
+                                       icon.src= "./media/play.png"}
+                                    
+                }else {prevsong.pause();
+                       mysong.pause();
+                       icon.src= "./media/play.png"
+            }
+
+         if (mysong==song1) { which1=0
+            }else{
+                if(mysong==song2) {which1=1
+                }else {if(mysong==song3) {which1=2   
+                      }else {if(mysong==song4) {which1=3   
+                      }else { which1=4}
+                    }
+                }
+            }
+
+         prevsong=document.getElementById(songs[which1]);
+
+        }
+
+        var p1=document.getElementById("pair1");
+        var p2=document.getElementById("pair2");
+        var p3=document.getElementById("pair3");
+        var p4=document.getElementById("pair4");
+        var p5=document.getElementById("pair5");
+        var ayes=document.getElementById("aff");
+        var ano=document.getElementById("neg");
+        
+
+        function f1(){
+            p1.style.display="inline";
+            p2.style.display="none";
+            p3.style.display="none";
+            p4.style.display="none";
+            p5.style.display="none";
+
+            ayes.style.display="none";
+            ano.style.display="none";
+
+            var radio = document.querySelector('input[type=radio][name=who]:checked');
+            radio.checked = false;
+
+        }
+
+        function f2(){
+            p1.style.display="none";
+            p2.style.display="inline";
+            p3.style.display="none";
+            p4.style.display="none";
+            p5.style.display="none";
+
+            ayes.style.display="none";
+            ano.style.display="none";
+
+            var radio = document.querySelector('input[type=radio][name=who]:checked');
+            radio.checked = false;
+
+        }
+
+        function f3(){
+            p1.style.display="none";
+            p2.style.display="none";
+            p3.style.display="inline";
+            p4.style.display="none";
+            p5.style.display="none";
+
+            ayes.style.display="none";
+            ano.style.display="none";
+
+            var radio = document.querySelector('input[type=radio][name=who]:checked');
+            radio.checked = false;
+
+        }
+
+        function f4(){
+            p1.style.display="none";
+            p2.style.display="none";
+            p3.style.display="none";
+            p4.style.display="inline";
+            p5.style.display="none";
+
+            ayes.style.display="none";
+            ano.style.display="none";
+
+            var radio = document.querySelector('input[type=radio][name=who]:checked');
+            radio.checked = false;
+
+        }
+
+        function f5(){
+            p1.style.display="none";
+            p2.style.display="none";
+            p3.style.display="none";
+            p4.style.display="none";
+            p5.style.display="inline";
+
+            ayes.style.display="none";
+            ano.style.display="none";
+
+            var radio = document.querySelector('input[type=radio][name=who]:checked');
+            radio.checked = false;
+
+        }
+        
+
+        function fwho1(){
+            ayes.style.display="none";
+            ano.style.display="none";
+
+            if (p5.style.display == "inline") {ayes.style.display="inline"}
+            else {ano.style.display="inline"}
+        }
+ 
+        function fwho2(){
+            ayes.style.display="none";
+            ano.style.display="none";
+
+            if (p1.style.display == "inline") {ayes.style.display="inline"}
+            else {ano.style.display="inline"}
+            
+        }
+
+        function fwho3(){
+            ayes.style.display="none";
+            ano.style.display="none";
+
+            if (p4.style.display == "inline") {ayes.style.display="inline"}
+            else {ano.style.display="inline"}
+        }
+
+        function fwho4(){
+            ayes.style.display="none";
+            ano.style.display="none";
+
+            if (p2.style.display == "inline") {ayes.style.display="inline"}
+            else {ano.style.display="inline"}
+        }
+
+        function fwho5(){
+            ayes.style.display="none";
+            ano.style.display="none";
+
+            if (p3.style.display == "inline") {ayes.style.display="inline"}
+            else {ano.style.display="inline"}
+        }
+
+
+
+        function clicked() {
+            alert("You have clicked the button!");
+        }
+    </script>  
+    
+</body>
+</html>
