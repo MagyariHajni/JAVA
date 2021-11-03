@@ -72,3 +72,12 @@
 [2021-10-20 14:27:00] [INFO   ] Searching student list based on age 
 [2021-10-20 14:27:00] [INFO   ] Sorting student list by last name 
 [2021-10-20 14:27:00] [WARNING] Invalid entry: List can be sorted only by name or date of birth 
+[2021-10-25 19:18:08] [INFO   ] Adding new students 
+[2021-10-25 19:18:08] [WARNING] Invalid date entry aaa. Format must be dd/MM/yyyy, numbers only 
+[2021-10-25 19:24:43] [INFO   ] Adding new students 
+[2021-10-25 19:24:43] [INFO   ] Adding students to list 
+[2021-10-25 19:24:43] [INFO   ] Listing current student list 
+[2021-10-25 19:24:43] [INFO   ] Deleting student based on ID 
+[2021-10-25 19:24:43] [INFO   ] Searching student list based on age 
+[2021-10-25 19:24:43] [INFO   ] Sorting student list by last name 
+[2021-10-25 19:24:43] [INFO   ] Sorting student list by last age 

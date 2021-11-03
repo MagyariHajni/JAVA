@@ -1,0 +1,3 @@
+Not valid input at line 5:  -not valid athlete number a -not valid time result input aa:2:7 -not valid first shooting range result input abcox -not valid second shooting range result input xxoxxx -not valid third shooting range result input xxx
+Not valid input at line 6:  -missing data
+Duplicate athlete data at line 9 (only first entry is registered)
