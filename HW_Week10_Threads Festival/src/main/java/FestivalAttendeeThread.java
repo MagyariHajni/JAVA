@@ -4,7 +4,6 @@ public class FestivalAttendeeThread extends Thread {
     private final TicketType ticketType;
     private final int gateAccessId;
 
-
     public FestivalAttendeeThread(TicketType ticketType, int gateID) {
         this.ticketType = ticketType;
         this.gateAccessId = gateID;

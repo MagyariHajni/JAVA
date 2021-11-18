@@ -13,10 +13,8 @@ public class FestivalStatisticsThread implements Runnable {
 
     private static int maxNumberOfPeople;
     private static int currentNumberOfAttendees = 0;
-    private static int waitingAttendees = 0;
     private static List<FestivalGate> gateList = new ArrayList<>();
     private static Map<FestivalGate, List<FestivalAttendeeThread>> attendeeMapByGate = new HashMap<>();
-    private static Map<FestivalGate, List<FestivalAttendeeThread>> waitingMapByGate = new HashMap<>();
     private static BufferedWriter writeStatistics;
 
     public FestivalStatisticsThread() throws IOException {
@@ -53,12 +51,8 @@ public class FestivalStatisticsThread implements Runnable {
             } catch (InterruptedException | IOException e) {
                 e.printStackTrace();
             }
-            waitingAttendees = waitingMapByGate.keySet().stream().reduce(0,(partial, gate) ->partial + gate.getWaitingList().size(),Integer::sum);
-        } while ((currentNumberOfAttendees+waitingAttendees) < maxNumberOfPeople);
+        } while ((currentNumberOfAttendees) < maxNumberOfPeople);
 
-        processLastWaitingList();
-
-        System.out.println(waitingMapByGate.keySet().stream().reduce(0,(partial, gate) ->partial + gate.getWaitingList().size(),Integer::sum));
         System.out.println(currentNumberOfAttendees);
         
         try {
@@ -83,17 +77,12 @@ public class FestivalStatisticsThread implements Runnable {
 
     private static Thread startProcessing() {
         attendeeMapByGate.clear();
-        waitingMapByGate.clear();
 
         for (FestivalGate gate : gateList) {
             attendeeMapByGate.put(gate, new ArrayList<>(gate.getPeopleAtThisGateList()));
             gate.clearGateList();
             gate.activateGate();
-
-            gate.getWaitingList().removeIf(attendee -> gate.getPeopleAtThisGateList().contains(attendee));
-
-            waitingMapByGate.put(gate, new ArrayList<>(gate.getWaitingList()));
-            gate.clearWaitingList();
+            gate.notifyWaitingAttendees(gate.getPeopleAtThisGateList());
         }
 
         Thread processDataThread = new Thread(() -> {
@@ -132,19 +121,6 @@ public class FestivalStatisticsThread implements Runnable {
             if (numberOfAttendeesByType != 0) {
                 writeStatistics.write("\t" + numberOfAttendeesByType + " people have " + type + " passes\n");
             }
-        }
-    }
-
-    private void processLastWaitingList() {
-        if (waitingMapByGate.keySet().stream().reduce(0,(partial, gate) ->partial + gate.getWaitingList().size(),Integer::sum) !=0){
-            Thread processDataThread = new Thread(() -> {
-                try {
-                    processData(waitingMapByGate);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            });
-            processDataThread.start();
         }
     }
 
