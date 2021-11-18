@@ -1,30 +1,123 @@
 ***********************************************************************************************
-At 18-11-2021 10:25:06: 103 people have entered
+At 18-11-2021 11:09:43: 149 people have entered
 
-Gate nr 1: 68 people have entered through here
-	13 people have FREE_PASS passes
+Gate nr 1: 38 people have entered through here
+	10 people have FREE_PASS passes
+	9 people have FULL passes
+	3 people have FULL_VIP passes
+	9 people have ONE_DAY passes
+	7 people have ONE_DAY_VIP passes
+Gate nr 2: 35 people have entered through here
+	2 people have FREE_PASS passes
+	7 people have FULL passes
+	4 people have FULL_VIP passes
+	11 people have ONE_DAY passes
+	11 people have ONE_DAY_VIP passes
+Gate nr 3: 43 people have entered through here
+	10 people have FREE_PASS passes
+	8 people have FULL passes
+	4 people have FULL_VIP passes
+	14 people have ONE_DAY passes
+	7 people have ONE_DAY_VIP passes
+Gate nr 4: 33 people have entered through here
+	7 people have FREE_PASS passes
 	11 people have FULL passes
+	4 people have FULL_VIP passes
+	4 people have ONE_DAY passes
+	7 people have ONE_DAY_VIP passes
+***********************************************************************************************
+At 18-11-2021 11:09:48: 309 people have entered
+
+Gate nr 1: 82 people have entered through here
+	10 people have FREE_PASS passes
+	16 people have FULL passes
+	15 people have FULL_VIP passes
+	26 people have ONE_DAY passes
+	15 people have ONE_DAY_VIP passes
+Gate nr 2: 84 people have entered through here
+	16 people have FREE_PASS passes
+	18 people have FULL passes
+	13 people have FULL_VIP passes
+	19 people have ONE_DAY passes
+	18 people have ONE_DAY_VIP passes
+Gate nr 3: 74 people have entered through here
+	22 people have FREE_PASS passes
+	4 people have FULL passes
+	16 people have FULL_VIP passes
+	14 people have ONE_DAY passes
+	18 people have ONE_DAY_VIP passes
+Gate nr 4: 69 people have entered through here
+	11 people have FREE_PASS passes
+	15 people have FULL passes
+	23 people have FULL_VIP passes
+	12 people have ONE_DAY passes
+	8 people have ONE_DAY_VIP passes
+***********************************************************************************************
+At 18-11-2021 11:09:53: 286 people have entered
+
+Gate nr 1: 78 people have entered through here
+	18 people have FREE_PASS passes
+	17 people have FULL passes
+	12 people have FULL_VIP passes
+	17 people have ONE_DAY passes
+	14 people have ONE_DAY_VIP passes
+Gate nr 2: 77 people have entered through here
+	13 people have FREE_PASS passes
+	18 people have FULL passes
+	15 people have FULL_VIP passes
+	12 people have ONE_DAY passes
+	19 people have ONE_DAY_VIP passes
+Gate nr 3: 65 people have entered through here
+	14 people have FREE_PASS passes
+	9 people have FULL passes
+	14 people have FULL_VIP passes
+	18 people have ONE_DAY passes
+	10 people have ONE_DAY_VIP passes
+Gate nr 4: 66 people have entered through here
+	7 people have FREE_PASS passes
+	13 people have FULL passes
 	15 people have FULL_VIP passes
 	17 people have ONE_DAY passes
-	12 people have ONE_DAY_VIP passes
-Gate nr 2: 35 people have entered through here
-	6 people have FREE_PASS passes
-	9 people have FULL passes
-	8 people have FULL_VIP passes
-	7 people have ONE_DAY passes
-	5 people have ONE_DAY_VIP passes
+	14 people have ONE_DAY_VIP passes
 ***********************************************************************************************
-At 18-11-2021 10:25:11: 97 people have entered
+At 18-11-2021 11:09:58: 245 people have entered
 
-Gate nr 1: 49 people have entered through here
+Gate nr 1: 50 people have entered through here
+	7 people have FREE_PASS passes
+	9 people have FULL passes
+	9 people have FULL_VIP passes
+	14 people have ONE_DAY passes
+	11 people have ONE_DAY_VIP passes
+Gate nr 2: 71 people have entered through here
+	14 people have FREE_PASS passes
+	12 people have FULL passes
+	15 people have FULL_VIP passes
+	19 people have ONE_DAY passes
+	11 people have ONE_DAY_VIP passes
+Gate nr 3: 51 people have entered through here
 	11 people have FREE_PASS passes
-	7 people have FULL passes
-	13 people have FULL_VIP passes
-	13 people have ONE_DAY passes
-	5 people have ONE_DAY_VIP passes
-Gate nr 2: 48 people have entered through here
-	9 people have FREE_PASS passes
-	7 people have FULL passes
-	12 people have FULL_VIP passes
-	8 people have ONE_DAY passes
-	12 people have ONE_DAY_VIP passes
+	12 people have FULL passes
+	8 people have FULL_VIP passes
+	10 people have ONE_DAY passes
+	10 people have ONE_DAY_VIP passes
+Gate nr 4: 73 people have entered through here
+	15 people have FREE_PASS passes
+	12 people have FULL passes
+	19 people have FULL_VIP passes
+	14 people have ONE_DAY passes
+	13 people have ONE_DAY_VIP passes
+***********************************************************************************************
+At 18-11-2021 11:10:03: 11 people have entered
+
+Gate nr 1: 1 people have entered through here
+	1 people have FULL passes
+Gate nr 2: 0 people have entered through here
+Gate nr 3: 5 people have entered through here
+	2 people have FREE_PASS passes
+	1 people have FULL_VIP passes
+	1 people have ONE_DAY passes
+	1 people have ONE_DAY_VIP passes
+Gate nr 4: 5 people have entered through here
+	2 people have FREE_PASS passes
+	1 people have FULL passes
+	2 people have ONE_DAY passes

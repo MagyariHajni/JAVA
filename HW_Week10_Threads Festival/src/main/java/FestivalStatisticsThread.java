@@ -53,7 +53,6 @@ public class FestivalStatisticsThread implements Runnable {
             } catch (InterruptedException | IOException e) {
                 e.printStackTrace();
             }
-
             waitingAttendees = waitingMapByGate.keySet().stream().reduce(0,(partial, gate) ->partial + gate.getWaitingList().size(),Integer::sum);
         } while ((currentNumberOfAttendees+waitingAttendees) < maxNumberOfPeople);
 
@@ -90,6 +89,8 @@ public class FestivalStatisticsThread implements Runnable {
             attendeeMapByGate.put(gate, new ArrayList<>(gate.getPeopleAtThisGateList()));
             gate.clearGateList();
             gate.activateGate();
+
+            gate.getWaitingList().removeIf(attendee -> gate.getPeopleAtThisGateList().contains(attendee));
 
             waitingMapByGate.put(gate, new ArrayList<>(gate.getWaitingList()));
             gate.clearWaitingList();

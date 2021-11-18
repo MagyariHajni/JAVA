@@ -5,9 +5,9 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        int n = 2; //set nr of gates
-        int maxPeopleAllowed = 200;//set nr of people allowed
-        int batchSize = 40;//set nr of people generated at once
+        int n = 4; //set nr of gates
+        int maxPeopleAllowed = 1000;//set nr of people allowed
+        int batchSize = 60;//set nr of people generated at once
         //TODO extend to close gates after a time or at a certain time
         //TODO extend set max number for a certain type of tickets
 
