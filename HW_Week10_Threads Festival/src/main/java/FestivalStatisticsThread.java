@@ -13,6 +13,7 @@ public class FestivalStatisticsThread implements Runnable {
 
     private static int maxNumberOfPeople;
     private static int currentNumberOfAttendees = 0;
+    private static int waitingAttendees = 0;
     private static List<FestivalGate> gateList = new ArrayList<>();
     private static Map<FestivalGate, List<FestivalAttendeeThread>> attendeeMapByGate = new HashMap<>();
     private static Map<FestivalGate, List<FestivalAttendeeThread>> waitingMapByGate = new HashMap<>();
@@ -52,7 +53,9 @@ public class FestivalStatisticsThread implements Runnable {
             } catch (InterruptedException | IOException e) {
                 e.printStackTrace();
             }
-        } while (currentNumberOfAttendees < maxNumberOfPeople);
+
+            waitingAttendees = waitingMapByGate.keySet().stream().reduce(0,(partial, gate) ->partial + gate.getWaitingList().size(),Integer::sum);
+        } while ((currentNumberOfAttendees+waitingAttendees) < maxNumberOfPeople);
 
         processLastWaitingList();
 
