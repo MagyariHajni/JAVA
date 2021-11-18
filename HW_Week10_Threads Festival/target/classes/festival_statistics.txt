@@ -1,0 +1,21 @@
+***********************************************************************************************
+At 18-11-2021 10:02:17: 10 people have entered
+
+Gate nr 1: 0 people have entered through here
+Gate nr 2: 3 people have entered through here
+	2 people have FULL passes
+	1 people have ONE_DAY_VIP passes
+Gate nr 3: 1 people have entered through here
+	1 people have FULL passes
+Gate nr 4: 1 people have entered through here
+	1 people have FULL_VIP passes
+Gate nr 5: 0 people have entered through here
+Gate nr 6: 1 people have entered through here
+	1 people have FULL_VIP passes
+Gate nr 7: 1 people have entered through here
+	1 people have ONE_DAY_VIP passes
+Gate nr 8: 3 people have entered through here
+	2 people have FULL passes
+	1 people have FULL_VIP passes
+Gate nr 9: 0 people have entered through here
+Gate nr 10: 0 people have entered through here

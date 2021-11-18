@@ -63,6 +63,7 @@ public class Results {
                     .map(person -> person.getLastName() + " " + person.getFirstName())
                     .sorted()
                     .collect(Collectors.toList());
+
             if (filteredList.isEmpty()) {
                 writeValid.write("Nobody has their birthday in month " + monthToCheck + " (" + new DateFormatSymbols().getMonths()[monthToCheck - 1] + ")");
 

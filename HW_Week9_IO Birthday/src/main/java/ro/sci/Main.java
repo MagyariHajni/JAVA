@@ -3,6 +3,7 @@ package ro.sci;
 import java.io.File;
 import java.nio.file.Path;
 import java.util.Scanner;
+import java.util.function.Predicate;
 
 import static ro.sci.Results.*;
 

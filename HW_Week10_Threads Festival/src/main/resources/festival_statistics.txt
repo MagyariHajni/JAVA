@@ -1,0 +1,116 @@
+***********************************************************************************************
+At 18-11-2021 10:02:53: 99 people have entered
+
+Gate nr 1: 18 people have entered through here
+	6 people have FREE_PASS passes
+	4 people have FULL passes
+	2 people have FULL_VIP passes
+	5 people have ONE_DAY passes
+	1 people have ONE_DAY_VIP passes
+Gate nr 2: 7 people have entered through here
+	2 people have FREE_PASS passes
+	2 people have FULL passes
+	1 people have ONE_DAY passes
+	2 people have ONE_DAY_VIP passes
+Gate nr 3: 10 people have entered through here
+	1 people have FREE_PASS passes
+	2 people have FULL passes
+	5 people have FULL_VIP passes
+	2 people have ONE_DAY_VIP passes
+Gate nr 4: 10 people have entered through here
+	2 people have FREE_PASS passes
+	2 people have FULL passes
+	2 people have FULL_VIP passes
+	1 people have ONE_DAY passes
+	3 people have ONE_DAY_VIP passes
+Gate nr 5: 13 people have entered through here
+	4 people have FREE_PASS passes
+	3 people have FULL passes
+	1 people have FULL_VIP passes
+	1 people have ONE_DAY passes
+	4 people have ONE_DAY_VIP passes
+Gate nr 6: 10 people have entered through here
+	2 people have FREE_PASS passes
+	2 people have FULL passes
+	2 people have FULL_VIP passes
+	1 people have ONE_DAY passes
+	3 people have ONE_DAY_VIP passes
+Gate nr 7: 9 people have entered through here
+	3 people have FREE_PASS passes
+	1 people have FULL passes
+	3 people have FULL_VIP passes
+	2 people have ONE_DAY passes
+Gate nr 8: 5 people have entered through here
+	1 people have FREE_PASS passes
+	1 people have FULL passes
+	2 people have FULL_VIP passes
+	1 people have ONE_DAY passes
+Gate nr 9: 8 people have entered through here
+	1 people have FREE_PASS passes
+	3 people have FULL passes
+	1 people have FULL_VIP passes
+	1 people have ONE_DAY passes
+	2 people have ONE_DAY_VIP passes
+Gate nr 10: 9 people have entered through here
+	1 people have FREE_PASS passes
+	3 people have FULL passes
+	1 people have FULL_VIP passes
+	1 people have ONE_DAY passes
+	3 people have ONE_DAY_VIP passes
+***********************************************************************************************
+At 18-11-2021 10:02:58: 101 people have entered
+
+Gate nr 1: 12 people have entered through here
+	2 people have FREE_PASS passes
+	4 people have FULL passes
+	2 people have FULL_VIP passes
+	3 people have ONE_DAY passes
+	1 people have ONE_DAY_VIP passes
+Gate nr 2: 12 people have entered through here
+	3 people have FREE_PASS passes
+	2 people have FULL_VIP passes
+	4 people have ONE_DAY passes
+	3 people have ONE_DAY_VIP passes
+Gate nr 3: 8 people have entered through here
+	1 people have FREE_PASS passes
+	3 people have FULL passes
+	2 people have FULL_VIP passes
+	2 people have ONE_DAY passes
+Gate nr 4: 11 people have entered through here
+	4 people have FULL passes
+	2 people have FULL_VIP passes
+	3 people have ONE_DAY passes
+	2 people have ONE_DAY_VIP passes
+Gate nr 5: 16 people have entered through here
+	6 people have FREE_PASS passes
+	2 people have FULL passes
+	3 people have FULL_VIP passes
+	3 people have ONE_DAY passes
+	2 people have ONE_DAY_VIP passes
+Gate nr 6: 9 people have entered through here
+	2 people have FREE_PASS passes
+	1 people have FULL passes
+	1 people have FULL_VIP passes
+	1 people have ONE_DAY passes
+	4 people have ONE_DAY_VIP passes
+Gate nr 7: 13 people have entered through here
+	2 people have FREE_PASS passes
+	2 people have FULL passes
+	5 people have FULL_VIP passes
+	3 people have ONE_DAY passes
+	1 people have ONE_DAY_VIP passes
+Gate nr 8: 7 people have entered through here
+	1 people have FREE_PASS passes
+	1 people have FULL passes
+	1 people have FULL_VIP passes
+	4 people have ONE_DAY_VIP passes
+Gate nr 9: 6 people have entered through here
+	1 people have FREE_PASS passes
+	2 people have FULL_VIP passes
+	1 people have ONE_DAY passes
+	2 people have ONE_DAY_VIP passes
+Gate nr 10: 7 people have entered through here
+	1 people have FREE_PASS passes
+	1 people have FULL passes
+	4 people have FULL_VIP passes
+	1 people have ONE_DAY_VIP passes
