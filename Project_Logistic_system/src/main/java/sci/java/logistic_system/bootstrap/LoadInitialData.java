@@ -21,6 +21,7 @@ public class LoadInitialData implements ApplicationListener<ContextRefreshedEven
     public void onApplicationEvent(ContextRefreshedEvent event) {
         loadInitialOrders();
     }
+    // modificare
 
     private void loadInitialOrders() {
         //load from csv
