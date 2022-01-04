@@ -8,6 +8,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 import static java.lang.Thread.sleep;
+import static java.nio.file.StandardOpenOption.APPEND;
 
 public class FestivalStatisticsThread implements Runnable {
 
@@ -46,6 +47,7 @@ public class FestivalStatisticsThread implements Runnable {
 
                 currentNumberOfAttendees += countAttendeesInThisBatch();
                 System.out.println("-----Processing data for current batch");
+                writeStatistics.write("(Total " + currentNumberOfAttendees + ")\n\n");
 
                 dataToBeProcessedThread = startProcessing();
             } catch (InterruptedException | IOException e) {
@@ -53,8 +55,6 @@ public class FestivalStatisticsThread implements Runnable {
             }
         } while ((currentNumberOfAttendees) < maxNumberOfPeople);
 
-        System.out.println(currentNumberOfAttendees);
-        
         try {
             assert dataToBeProcessedThread != null;
             dataToBeProcessedThread.join();
@@ -62,6 +62,8 @@ public class FestivalStatisticsThread implements Runnable {
         } catch (InterruptedException | IOException e) {
             e.printStackTrace();
         }
+
+        System.out.println("Done");
     }
 
     private int countAttendeesInThisBatch() throws IOException {
@@ -70,7 +72,7 @@ public class FestivalStatisticsThread implements Runnable {
 
         writeStatistics.write("***********************************************************************************************\n");
         writeStatistics.write("At " + time.format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss")) + ": "
-                + numberOfAttendeesInThisBatch + " people have entered\n\n");
+                + numberOfAttendeesInThisBatch + " people have entered\t");
 
         return numberOfAttendeesInThisBatch;
     }
@@ -106,11 +108,13 @@ public class FestivalStatisticsThread implements Runnable {
     }
 
     private static void processGateData(int gateId, List<FestivalAttendeeThread> attendeeListToProcess) throws IOException {
+
         writeStatistics.write("Gate nr " + gateId + ": " + attendeeListToProcess.size() + " people have entered through here\n");
 
         if (!attendeeListToProcess.isEmpty()) {
             sortAttendeesByType(attendeeListToProcess);
         }
+
     }
 
     private static void sortAttendeesByType(List<FestivalAttendeeThread> attendeeListToProcess) throws IOException {

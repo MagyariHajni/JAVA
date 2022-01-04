@@ -31,7 +31,6 @@ ALTER TABLE accommodation_fare_relation
     ON DELETE NO ACTION
     ;
 
-
 ALTER TABLE accommodation_fare_relation
     ADD FOREIGN KEY (id_room_fare)
     REFERENCES room_fare (id)

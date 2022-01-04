@@ -17,10 +17,6 @@ public class FestivalAttendeeThread extends Thread {
     public void run() {
         try {
             sleep((long) (Math.random() * 4000));
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        try {
             accessFestival(this);
         } catch (InterruptedException e) {
             e.printStackTrace();

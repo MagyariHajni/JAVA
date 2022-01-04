@@ -35,6 +35,10 @@ public class MainTest {
         }
     }
 
+    @Test
+    public void sthing(){
+    }
+
     private ResultSet insertAccommodationData(BufferedReader reader) throws IOException, SQLException {
         while ((line = reader.readLine()) != null) {
             dataToEnter.addAll(Arrays.asList(line.split("\"")));
@@ -99,6 +103,7 @@ public class MainTest {
         } else {
             System.out.println("No results");
         }
+        connection.close();
     }
 
     @Test
@@ -119,7 +124,7 @@ public class MainTest {
         } else {
             System.out.println("No results");
         }
-
+        connection.close();
     }
 
     @Test
@@ -138,7 +143,7 @@ public class MainTest {
         } else {
             System.out.println("No results");
         }
-
+        connection.close();
     }
 
     @Test
@@ -169,6 +174,7 @@ public class MainTest {
         } else {
             System.out.println("No results");
         }
+        connection.close();
     }
 
     @Test
@@ -204,5 +210,6 @@ public class MainTest {
         } else {
             System.out.println("No results");
         }
+        connection.close();
     }
 }
