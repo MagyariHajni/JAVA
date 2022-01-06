@@ -1,28 +1,28 @@
-package sci.java.logistic_system;
+package sci.java.logistic_system.services;
 
 import org.springframework.stereotype.Service;
-import sci.java.logistic_system.domain.Order;
+import sci.java.logistic_system.domain.DeliveryOrder;
 
 import java.util.*;
 
 @Service
 public class OrderRepository {
 
-    private Map<Integer, Order> allOrdersMap;
+    private Map<Integer, DeliveryOrder> allOrdersMap;
 
     public OrderRepository() {
         this.allOrdersMap = new HashMap<>();
     }
 
-    public List<Order> listAll() {
+    public List<DeliveryOrder> listAll() {
         return new ArrayList<>(allOrdersMap.values());
     }
 
-    public Order getById(Integer id) {
+    public DeliveryOrder getById(Integer id) {
         return allOrdersMap.get(id);
     }
 
-    public Order saveOrUpdate(Order order) {
+    public DeliveryOrder saveOrUpdate(DeliveryOrder order) {
         if (order != null) {
             if (order.getId() == null) {
                 order.setId(getNextKey());
